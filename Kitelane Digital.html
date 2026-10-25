@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kitelane Digital – Websites, Rental Apps & Cab Booking</title>
+<meta name="description" content="Kitelane Digital builds business websites, rental listing platforms and cab booking systems. Call 7339504166.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--ink:#0b1b33;--muted:#55657d;--line:#dde4ee;--brand:#2b59ff;--gold:#ffb703;--hero:#0b1b33;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1424;--surface:#12213a;--ink:#eef2f9;--muted:#9db0cb;--line:#223454;--brand:#7a98ff;--hero:#070f1c}}
+:root[data-theme="dark"]{--bg:#0a1424;--surface:#12213a;--ink:#eef2f9;--muted:#9db0cb;--line:#223454;--brand:#7a98ff;--hero:#070f1c}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;margin:0;line-height:1.15}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hero);color:var(--hero-ink)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font-family:Sora,sans-serif;font-weight:800;font-size:1.25rem;text-decoration:none;letter-spacing:-.02em}
+.logo i{font-style:normal;color:var(--gold)}
+.top nav a{margin-left:20px;text-decoration:none;font-size:.95rem;opacity:.85}
+.top nav a:hover{opacity:1}
+.btn{display:inline-block;padding:14px 26px;border-radius:12px;font-weight:600;text-decoration:none;background:var(--gold);color:#0b1b33;border:2px solid var(--gold);cursor:pointer;font:inherit;font-weight:600}
+.btn.ghost{background:transparent;color:inherit;border-color:rgba(255,255,255,.35)}
+.hero{background:radial-gradient(900px 400px at 85% 0,#2b59ff55,transparent),var(--hero);color:var(--hero-ink);padding:72px 0 64px}
+.hero h1{font-size:clamp(2.3rem,6.5vw,4.3rem);font-weight:800;max-width:16ch;letter-spacing:-.03em}
+.hero p{font-size:1.15rem;max-width:54ch;opacity:.85;margin:22px 0 30px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18)}
+.trust b{display:block;font-family:Sora,sans-serif;font-size:1.9rem;color:var(--gold)}
+.trust span{font-size:.9rem;opacity:.8}
+section{padding:70px 0}
+.h{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700;margin-bottom:10px;letter-spacing:-.02em}
+.sub{color:var(--muted);max-width:60ch;margin:0 0 34px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card .ic{width:48px;height:48px;border-radius:14px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:1.4rem;margin-bottom:16px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.card ul{margin:14px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px;background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand);margin-bottom:12px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;counter-reset:s}
+.steps div{padding-top:16px;border-top:3px solid var(--gold);counter-increment:s}
+.steps div::before{content:counter(s);font-family:Sora,sans-serif;font-weight:800;font-size:1.6rem;color:var(--brand)}
+.steps h3{font-size:1.05rem;margin:4px 0}
+.steps p{margin:0;color:var(--muted);font-size:.93rem}
+.ind{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0 0 24px;list-style:none}
+.ind li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:500}
+.note{color:var(--muted);max-width:62ch}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact .box{background:var(--hero);color:var(--hero-ink);border-radius:20px;padding:34px}
+.contact .box a{display:block;margin-top:14px;font-size:1.2rem;font-family:Sora,sans-serif;text-decoration:none}
+.contact .box small{opacity:.75;display:block;margin-top:18px}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+footer{background:var(--hero);color:var(--hero-ink);padding:28px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;opacity:.85}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;text-decoration:none;font-weight:600;padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:30}
+@media (max-width:760px){.contact{grid-template-columns:1fr}.top nav a:not(.keep){display:none}section{padding:52px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="logo" href="#home">Kite<i>lane</i></a>
+  <nav><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact" class="keep">Contact</a></nav>
+</div></div>
+
+<main id="home">
+<div class="hero"><div class="wrap">
+  <h1>Your business, online and ready for customers.</h1>
+  <p>Kitelane Digital builds business websites, rental listing platforms and cab booking systems. Clear design, fast pages, and a team you can call.</p>
+  <div class="row">
+    <a class="btn" href="tel:+917339504166">Call 7339504166</a>
+    <a class="btn ghost" href="https://wa.me/917339504166?text=Hi%20Kitelane%2C%20I%20need%20a%20website">Chat on WhatsApp</a>
+  </div>
+  <div class="trust">
+    <div><b>15+</b><span>Happy customers</span></div>
+    <div><b>3</b><span>Core solutions</span></div>
+    <div><b>Same day</b><span>Reply on calls and messages</span></div>
+  </div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2 class="h">What we build</h2>
+  <p class="sub">Three solutions built for small and growing businesses.</p>
+  <div class="grid3">
+    <div class="card"><div class="ic">🌐</div><h3>Business websites</h3><p>A professional page for your services, prices and contact details that works on every phone.</p>
+      <ul><li>Mobile friendly design</li><li>Click to call and WhatsApp</li><li>Found on Google</li></ul></div>
+    <div class="card"><div class="ic">🏢</div><h3>Rental apartment app</h3><p>A listing platform for rental apartments in Malaysia, made for owners, agents and tenants.</p>
+      <ul><li>Search by area, price and bedrooms</li><li>Photo galleries</li><li>Tenant enquiry forms</li></ul></div>
+    <div class="card"><div class="ic">🚖</div><h3>Tripmitra cab service</h3><p>Online cab booking for custom clients: airport drops, outstation trips and daily rentals.</p>
+      <ul><li>Trip type and fare quotes</li><li>Booking requests by call or WhatsApp</li><li>Custom packages for companies</li></ul></div>
+  </div>
+</div></section>
+
+<section id="work" class="alt"><div class="wrap">
+  <h2 class="h">Featured projects</h2>
+  <p class="sub">Solutions we have built and run.</p>
+  <div class="grid3">
+    <div class="card"><span class="tag">Property</span><h3>Malaysia Rental Apartment</h3><p>Rental listings platform with filters, photo galleries and enquiry forms for tenants and owners.</p></div>
+    <div class="card"><span class="tag">Travel</span><h3>Tripmitra</h3><p>Cab service for custom clients with airport transfers, outstation trips and local rentals.</p></div>
+    <div class="card"><span class="tag">Local business</span><h3>Business web pages</h3><p>Service pages for shops, clinics, salons, gyms and tuition centres, live within days.</p></div>
+  </div>
+</div></section>
+
+<section id="clients"><div class="wrap">
+  <h2 class="h">15+ happy customers across industries</h2>
+  <p class="sub">We have worked with businesses in these areas.</p>
+  <ul class="ind"><li>Property and rentals</li><li>Travel and cab services</li><li>Restaurants and food</li><li>Fitness and wellness</li><li>Education and tuition</li><li>Salons and beauty</li><li>Retail shops</li></ul>
+  <p class="note">Client references are shared on request. Call or message us and we will connect you with a customer who has used our service.</p>
+</div></section>
+
+<section id="process" class="alt"><div class="wrap">
+  <h2 class="h">How it works</h2>
+  <p class="sub">From first call to live website in four steps.</p>
+  <div class="steps">
+    <div><h3>Tell us your needs</h3><p>Call or message us about your business and goals.</p></div>
+    <div><h3>Get a clear quote</h3><p>You get a fixed price and timeline before we start.</p></div>
+    <div><h3>We build it</h3><p>You see progress and approve each page.</p></div>
+    <div><h3>Launch and support</h3><p>Your site goes live and we help with changes.</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="h">Get your free quote</h2>
+  <p class="sub">Call us, or send the form and it opens WhatsApp with your message ready.</p>
+  <div class="contact">
+    <div class="box">
+      <h3>Talk to us</h3>
+      <a href="tel:+917339504166">7339504166</a>
+      <a href="tel:+918056811486">8056811486</a>
+      <a href="mailto:akaswinkumar869@gmail.com" style="font-size:1rem;word-break:break-all">akaswinkumar869@gmail.com</a>
+      <small>Calls and WhatsApp, every day.</small>
+    </div>
+    <form id="f">
+      <input id="n" placeholder="Your name" required aria-label="Your name">
+      <select id="s" aria-label="Service"><option>Business website</option><option>Rental apartment app</option><option>Tripmitra cab booking</option><option>Something else</option></select>
+      <textarea id="m" rows="4" placeholder="Tell us about your business" aria-label="Message"></textarea>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<a class="wa" href="https://wa.me/917339504166" aria-label="Chat on WhatsApp">WhatsApp us</a>
+<footer><div class="wrap"><span>© 2026 Kitelane Digital. All rights reserved.</span><span>7339504166 · 8056811486</span></div></footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t='Hi Kitelane, I am '+document.getElementById('n').value+'. I need: '+document.getElementById('s').value+'. '+document.getElementById('m').value;
+  window.open('https://wa.me/917339504166?text='+encodeURIComponent(t),'_blank','noopener');
+});
+</script>
+</body>
+</html>
